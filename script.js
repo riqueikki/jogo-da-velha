@@ -45,5 +45,3 @@ function checkWin(currentClass) {
     return combination.every(index => cells[index].classList.contains(currentClass));
   });
 }
-
-# Adiciona o script do jogo
