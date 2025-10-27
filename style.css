@@ -1,15 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-#game {
+.board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  grid-gap: 10px;
-  justify-content: center;
-  margin-top: 30px;
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
 .cell {
@@ -17,20 +20,25 @@ body {
   height: 100px;
   background-color: #fff;
   border: 2px solid #333;
-  font-size: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
-.cell.x { color: blue; }
-.cell.o { color: red; }
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1em;
+.cell.x::before {
+  content: "X";
+  color: #ff5252;
 }
 
-# Adiciona o estilo do jogo
+.cell.o::before {
+  content: "O";
+  color: #2196f3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
