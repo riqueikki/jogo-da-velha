@@ -241,7 +241,7 @@ function checkWin(currentClass) {
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido por você 🚀
+Projeto desenvolvido por Henrique P.Brandão
 
 ---
 
